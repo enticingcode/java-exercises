@@ -9,17 +9,11 @@ const subtract = function (x, y) {
 };
 // console.log(subtract(10, 4))
 
-const sum = function (x) {
-  // let total = 0;
-  if ([] == "") {
-    return 0;
-  } else {
-    [].reduce(function (total, currentValue) {
-
-    }, 0)
-
+const sum = function (numbers) {
+  let x = numbers.reduce((total, currentValue) => {return total + currentValue}, 0)
+  return x;
   }
-}
+
 console.log(sum([]));
 
 
