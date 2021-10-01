@@ -1,6 +1,24 @@
-const fibonacci = function(number) {
+const fibonacci = function(num) {
+        var a = 1, b = 0, temp;
+      
+        while (num >= 0){
+          temp = a;
+          a = a + b;
+          b = temp;
+          num--;
+        }
+      
+        return b;
+      }
+
+console.log(fibonacci(3));
+
+
+
+
+
     // F(n) = F(n-1) + F(n-2); Fib sequence formula
-};
+
 
 
 
