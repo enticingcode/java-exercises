@@ -2,10 +2,31 @@ const fibonacci = function(num) {
         var a = 1, b = 0, temp;
       
         while (num >= 0){
-          temp = a;
+          temp = a; 
+        //  Round 1: temp = 1;
+        //  Round 2: temp = 1;
+        //  Round 3: temp = 2;
+        //  Round 4: temp = 3;
+          console.log(temp)
           a = a + b;
+        //  Round 1: a = 1 + 0;
+        //  Round 2: a = 1 + 1;
+        //  Round 3: a = 2 + 1;
+        //  Round 4: a = 
+          console.log(a);
+
           b = temp;
-          num--;
+        // Round 1: b = 1;
+        // Round 2: b = 1;
+        // Round 3: b = 2;
+        // Round 4: b = 2;
+          console.log(b)
+          num--;  
+        //  Round 1: num = 2;
+        //  Round 2: num = 1;
+        //  Round 3: num = 0;
+        //  Round 4: num = -1;
+          console.log(num);
         }
       
         return b;
