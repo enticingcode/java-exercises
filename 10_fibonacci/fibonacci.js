@@ -1,56 +1,26 @@
-// const fibonacci = function(num) {
-//         var a = 1, b = 0, temp;
-      
-//         while (num >= 0){
-//           temp = a; 
-//         //  Round 1: temp = 1;
-//         //  Round 2: temp = 1;
-//         //  Round 3: temp = 2;
-//         //  Round 4: temp = 3;
-//           console.log(temp)
-//           a = a + b;
-//         //  Round 1: a = 1 + 0;
-//         //  Round 2: a = 1 + 1;
-//         //  Round 3: a = 2 + 1;
-//         //  Round 4: a = 
-//           console.log(a);
-
-//           b = temp;
-//         // Round 1: b = 1;
-//         // Round 2: b = 1;
-//         // Round 3: b = 2;
-//         // Round 4: b = 2;
-//           console.log(b)
-//           num--;  
-//         //  Round 1: num = 2;
-//         //  Round 2: num = 1;
-//         //  Round 3: num = 0;
-//         //  Round 4: num = -1;
-//           console.log(num);
-//         }
-      
-//         return b;
-//       }
-
-// console.log(fibonacci(3));
-
-
-// EXAMPLE 2;
-
-
-function fibonacci(num) {
-    if (num <= 1) return 1;
+const fibonacci = function(count) {
+    if (count < 0) return "OOPS";
+    if (count === 0) return 0;
+    let a = 0;
+    let b = 1;
+    for (let i = 1; i < count; i++) {
+      const temp = b;
+      b = a + b;
+      a = temp;
+    }
+    return b;
+  };
   
-    return fibonacci(num - 1) + fibonacci(num - 2);
-  }
 
-  console.log(fibonacci(2));
+  console.log(fibonacci(15));
+
 
 
 
     // F(n) = F(n-1) + F(n-2); Fib sequence formula
 
-
+    // F(4) = F(4 - 1) + F(4 - 2);
+            //3 + 2 = 5;
 
 
 
